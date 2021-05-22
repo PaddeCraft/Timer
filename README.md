@@ -19,8 +19,8 @@ Timer Settings: `PaddeCraftDataPack.Timer.settings`
 
 ### Dependencys
 
-I reconnend using PaddeCraftDataPack-Core,
-but it is not required.
+I recommend using PaddeCraftDataPack-Core,
+but it's not required.
 
 ### Download
 
