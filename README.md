@@ -17,6 +17,11 @@ Reset time: `/trigger timer.time.reset`
 Admin: `PaddeCraftDataPack.Admin`
 Timer Settings: `PaddeCraftDataPack.Timer.settings`
 
+### Dependencys
+
+I reconnend using PaddeCraftDataPack-Core,
+but it is not required.
+
 ### Download
 
 The downloads are in `Releases`.
