@@ -1,6 +1,6 @@
 # PaddeCraftDataPack - Timer
 
-### Willkommen
+### Welcome
 
 Welcome to the Timer-Repository!
 Here is my Minecraft timer datapack.
