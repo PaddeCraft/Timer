@@ -2,12 +2,12 @@
 
 ### Willkommen
 
-Hallo und Willkommen auf der Timer-Repository!
-Hier findest du mein Timer Datapack für Minecraft.
-Getestet und Programmiert: 1.16.5
+Welcome to the Timer-Repository!
+Here is my Minecraft timer datapack.
+Codet in 1.16.5.
 
 ### Download
 
-Die Downloads findest du unter `Releases`.
+The downloads are in `Releases`.
 
-## Viel Spaß!
+## Have fun!
