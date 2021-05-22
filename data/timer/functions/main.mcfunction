@@ -15,6 +15,8 @@ scoreboard players enable @a[tag=PaddeCraftDataPack.Admin] timer.resume
 function timer:title
 function timer:count
 function timer:time/more
+function timer:deathstop
+function timer:goals
 execute as @a[scores={timer=1..}] run function timer:ui/normal
 scoreboard players enable @a[tag=PaddeCraftDataPack.Timer.settings] timer
 scoreboard players enable @a[tag=PaddeCraftDataPack.Admin] timer

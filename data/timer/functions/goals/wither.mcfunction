@@ -1,5 +1,4 @@
-
-tellraw @a ["",{"text":"========== Timer ==========","color":"white"},{"text":"\n\n"},{"text":"Reset durch ","color":"aqua"},{"selector":"@s","color":"aqua"},{"text":":\nBeendet bei","color":"aqua"},{"text":"\n "}]
+tellraw @a ["",{"text":"========== Timer ==========","color":"white"},{"text":"\n\n"},{"text":"Challenge beendet durch ","color":"aqua"},{"selector":"@s","color":"aqua"},{"text":":\nWither besiegt bei","color":"aqua"},{"text":"\n "}]
 
 execute if score title-extra timer-data matches 0 run tellraw @a ["",{"score":{"name":"hour","objective":"timer-data"},"color":"aqua"},{"text":":","color":"white"},{"score":{"name":"min","objective":"timer-data"},"color":"aqua"},{"text":":","color":"white"},{"score":{"name":"sec","objective":"timer-data"},"color":"aqua"}]
 execute if score title-extra timer-data matches 1 run tellraw @a ["",{"score":{"name":"day","objective":"timer-data"},"color":"aqua"},{"text":"d ","color":"aqua"},{"score":{"name":"hour","objective":"timer-data"},"color":"aqua"},{"text":":","color":"white"},{"score":{"name":"min","objective":"timer-data"},"color":"aqua"},{"text":":","color":"white"},{"score":{"name":"sec","objective":"timer-data"},"color":"aqua"}]
@@ -7,18 +6,11 @@ execute if score title-extra timer-data matches 2 run tellraw @a ["",{"score":{"
 
 tellraw @a {"text":"\n==========================="}
 
-scoreboard players set tick timer-data 0
-scoreboard players set sec timer-data 0
-scoreboard players set min timer-data 0
-scoreboard players set hour timer-data 0
-scoreboard players set day timer-data 0
-scoreboard players set week timer-data 0
+execute if score roe timer-data matches 1 run execute at @a run summon firework_rocket ~ ~ ~ {Life:5,LifeTime:10,Motion:[0.0,0.70,0.0],FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:0,Trail:1b,Colors:[I;16740096,16744448],FadeColors:[I;16735744]}]}}}}
+execute if score roe timer-data matches 1 run execute at @a run playsound entity.firework_rocket.launch master @a ~ ~ ~
+execute if score roe timer-data matches 1 run execute at @a run playsound entity.firework_rocket.large_blast master @a ~ ~ ~
 
-tellraw @s ["",{"text":"\n"},{"text":"The time was set to 0.","italic":true,"color":"aqua"}]
-
-scoreboard players set @s timer.time.reset 0
+gamemode spectator @a
 
 scoreboard players set ani timer-data 21
 scoreboard players set pause timer-data 1
-
-clear @a

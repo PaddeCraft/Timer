@@ -1,4 +1,7 @@
 scoreboard objectives add timer-data dummy
+scoreboard objectives add timer-ds minecraft.custom:minecraft.deaths
+scoreboard objectives add timer-ked minecraft.killed:minecraft.ender_dragon
+scoreboard objectives add timer-kwr minecraft.killed:minecraft.wither
 scoreboard objectives add timer trigger
 scoreboard objectives add timer.pause trigger
 scoreboard objectives add timer.resume trigger
@@ -17,3 +20,5 @@ execute if score loadet timer-data matches 1 run scoreboard players set day time
 execute if score loadet timer-data matches 1 run scoreboard players set week timer-data 0 
 execute if score loadet timer-data matches 1 run scoreboard players set pause timer-data 1
 execute if score loadet timer-data matches 1 run scoreboard players set mode timer-data 1
+execute if score loadet timer-data matches 1 run scoreboard players set ppt timer-data 1
+execute if score loadet timer-data matches 1 run scoreboard players set roe timer-data 1
