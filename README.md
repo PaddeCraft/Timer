@@ -8,9 +8,9 @@ Coded in 1.16.5, but should work in later versions too.
 
 ### Triggers
 
-Settings: `/trigger timer`
-Set time: `/trigger timer.set.<second/minute/hour/day/week> set <value>`
-Reset time: `/trigger timer.time.reset`
+Settings: `/trigger timer`  
+Set time: `/trigger timer.set.<second/minute/hour/day/week> set <value>`  
+Reset time: `/trigger timer.time.reset`  
 
 ### Permissions (tags)
 
